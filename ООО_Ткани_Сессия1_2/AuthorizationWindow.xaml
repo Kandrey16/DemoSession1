@@ -1,0 +1,34 @@
+﻿<Window x:Class="ООО_Ткани_Сессия1_2.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ООО_Ткани_Сессия1_2"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Content="Авторизация" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="42" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Content="Почта" FontSize="36" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
+        <TextBox Text="ivanov@gmail.com" Name="pbEmail" FontSize="32" Grid.Row="2" Margin="5" Grid.Column="1" Background="#eeeeee" Foreground="Black" VerticalContentAlignment="Center"/>
+        <Label Content="Пароль" Grid.Row="3" FontSize="36" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <PasswordBox Password="Pa$$123" Name="pbPassword" Grid.Row="3" Margin="5" Grid.Column="1" Background="#eeeeee" Foreground="Black" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnEnter" Grid.Column="1" Grid.Row="5" Content="Войти" Click="Button_Click" Background="Black" FontSize="36" Foreground="White" Margin="10"/>
+        <Button x:Name="btnRegister" Grid.Column="1" Grid.Row="6" Content="Регистрация" Click="RegisterButton_Click" Background="Black" FontSize="36" Foreground="White" Margin="10"/>
+
+    </Grid>
+</Window>
